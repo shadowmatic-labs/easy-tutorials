@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Reflection;
 using Coffee.UIExtensions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.UI;
@@ -99,7 +100,7 @@ public class TutorialButton : TutorialElement
 
         GameObject textField = Instantiate( TextPrefab, tutorialPanel.transform);
         textField.SetActive(true);
-        textField.GetComponent<Text>().text = Text;
+        textField.GetComponent<TextMeshProUGUI>().text = Text;
 
 
 

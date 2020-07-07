@@ -405,7 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Step: 0
   Text: Hello, let's start by clicking this important button
-  TextPrefab: {fileID: 6598866490384741600, guid: 94262eeddba62e04082a4687559e787a,
+  TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
     type: 3}
 --- !u!1 &198629081
 GameObject:
@@ -806,7 +806,8 @@ MonoBehaviour:
   Step: 1
   Text: That's all folks, now let's clear the preferences so that next time we can
     go through the tutorial again
-  TextPrefab: {fileID: 0}
+  TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
+    type: 3}
 --- !u!1 &730550203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,7 +1493,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
