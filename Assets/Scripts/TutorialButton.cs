@@ -113,6 +113,9 @@ public class TutorialButton : TutorialElement
             Debug.LogError( "You don't have a tutorial panel going on" );
             return;
         }
+        var myButton = GetComponent<Button>();
+        myButton.onClick.RemoveListener( PlayerSession.IncrementTutorialStep );
+        myButton.onClick.RemoveListener( Hide );
 
         Destroy( tutorialPanel );
     }
