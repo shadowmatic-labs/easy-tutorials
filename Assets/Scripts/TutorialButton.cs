@@ -97,7 +97,7 @@ public class TutorialButton : TutorialElement
 
         // TODO: Instantiate Text Prefab with the right text
 
-        GameObject textField = Instantiate( TextPrefab, myCanvas.transform);
+        GameObject textField = Instantiate( TextPrefab, tutorialPanel.transform);
         textField.SetActive(true);
         textField.GetComponent<Text>().text = Text;
 
