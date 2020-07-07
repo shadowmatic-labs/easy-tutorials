@@ -43,7 +43,7 @@ namespace Coffee.UIExtensions
 			set
 			{
 				m_FitTarget = value;
-				//FitTo(m_FitTarget);
+				FitTo(m_FitTarget , 1.2f);
 			}
 		}
 
@@ -121,7 +121,6 @@ namespace Coffee.UIExtensions
 		/// <param name="target">Target transform.</param>
 		public void FitTo(RectTransform target, float scale = 1.0f)
 		{
-			fitTarget = target;
 			var rt = transform as RectTransform;
 			
 			rt.pivot = target.pivot;
@@ -151,7 +150,7 @@ namespace Coffee.UIExtensions
 			if (m_FitTarget)
 			{
 				FitTo(m_FitTarget);
-			}
+			} 
 			SetDirty();
 		}
 
