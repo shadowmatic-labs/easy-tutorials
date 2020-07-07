@@ -96,6 +96,13 @@ public class TutorialButton : TutorialElement
         unmaskRaycast.targetUnmask = unmask;
 
         // TODO: Instantiate Text Prefab with the right text
+
+        GameObject textField = Instantiate( TextPrefab, myCanvas.transform);
+        textField.SetActive(true);
+        textField.GetComponent<Text>().text = Text;
+
+
+
     }
 
     void Hide()
