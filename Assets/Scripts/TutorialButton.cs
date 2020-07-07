@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Reflection;
 using Coffee.UIExtensions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.UI;
@@ -96,6 +97,13 @@ public class TutorialButton : TutorialElement
         unmaskRaycast.targetUnmask = unmask;
 
         // TODO: Instantiate Text Prefab with the right text
+
+        GameObject textField = Instantiate( TextPrefab, tutorialPanel.transform);
+        textField.SetActive(true);
+        textField.GetComponent<TextMeshProUGUI>().text = Text;
+
+
+
     }
 
     void Hide()
@@ -105,6 +113,9 @@ public class TutorialButton : TutorialElement
             Debug.LogError( "You don't have a tutorial panel going on" );
             return;
         }
+        var myButton = GetComponent<Button>();
+        myButton.onClick.RemoveListener( PlayerSession.IncrementTutorialStep );
+        myButton.onClick.RemoveListener( Hide );
 
         Destroy( tutorialPanel );
     }
