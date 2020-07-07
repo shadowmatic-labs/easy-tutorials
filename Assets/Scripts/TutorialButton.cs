@@ -78,7 +78,7 @@ public class TutorialButton : TutorialElement
         unmaskImage.raycastTarget = false;
         var unmask = unmaskGO.AddComponent<Unmask>();
         unmaskRect.localScale = Vector3.one * 1.2f;
-        unmask.FitTo( myButton.gameObject.GetComponent<RectTransform>(), 1.2f );
+        unmask.fitTarget = myButton.gameObject.GetComponent<RectTransform>();
 
         // Add overlay
         var overlayGO = new GameObject
