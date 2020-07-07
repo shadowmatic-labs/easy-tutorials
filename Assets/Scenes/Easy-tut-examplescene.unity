@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 65000040}
   - component: {fileID: 65000042}
   - component: {fileID: 65000041}
+  - component: {fileID: 65000043}
   m_Layer: 0
   m_Name: Second Panel
   m_TagString: Untagged
@@ -195,6 +196,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65000039}
   m_CullTransparentMesh: 0
+--- !u!114 &65000043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65000039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37b49422d7a36347af9b7bce10bcad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Step: 2
+  Text: TimedPanel
+  TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
+    type: 3}
+  SecondsToWait: 5
 --- !u!1 &157932916
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,11 +418,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 181607344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba6f0b11e62fe0e4697b596301027c74, type: 3}
+  m_Script: {fileID: 11500000, guid: 7628fe23a98f4d744a166480dcd4e94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Step: 0
-  Text: Hello, let's start by clicking this important button
+  Step: 1
+  Text: Click the button
   TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
     type: 3}
 --- !u!1 &198629081
@@ -419,6 +437,7 @@ GameObject:
   - component: {fileID: 198629084}
   - component: {fileID: 198629083}
   - component: {fileID: 198629085}
+  - component: {fileID: 198629086}
   m_Layer: 0
   m_Name: First Panel
   m_TagString: Untagged
@@ -510,6 +529,22 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &198629086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198629081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e34eeb4a9ee924f8fe69f333021973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Step: 0
+  Text: Click Panel
+  TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
+    type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,12 +835,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 714018583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba6f0b11e62fe0e4697b596301027c74, type: 3}
+  m_Script: {fileID: 11500000, guid: 7628fe23a98f4d744a166480dcd4e94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Step: 1
-  Text: That's all folks, now let's clear the preferences so that next time we can
-    go through the tutorial again
+  Step: 3
+  Text: We need to clear the playersession info to restart the tutorial
   TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
     type: 3}
 --- !u!1 &730550203
