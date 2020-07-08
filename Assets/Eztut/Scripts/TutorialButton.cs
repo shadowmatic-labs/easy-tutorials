@@ -15,7 +15,7 @@ public class TutorialButton : TutorialBehaviour
 	protected override void Show()
 	{
 		base.Show();
-		var myButton = GetComponent<Button>();
+		var panelRect = GetComponent<RectTransform>();
 
 		// Add mask to panel
 		var maskGO = new GameObject
@@ -43,7 +43,7 @@ public class TutorialButton : TutorialBehaviour
 		unmaskImage.raycastTarget = false;
 		var unmask = unmaskGO.AddComponent<Unmask>();
 		unmaskRect.localScale = Vector3.one * 1.2f;
-		unmask.fitTarget = myButton.gameObject.GetComponent<RectTransform>();
+		unmask.fitTarget = panelRect;
 
 		// Add overlay
 		var overlayGO = new GameObject
@@ -69,6 +69,7 @@ public class TutorialButton : TutorialBehaviour
 		}
 		else
 		{
+			var myButton = GetComponent<Button>();
 			myButton.onClick.AddListener( PlayerSession.IncrementTutorialStep );
 			myButton.onClick.AddListener( Hide );
 		}
