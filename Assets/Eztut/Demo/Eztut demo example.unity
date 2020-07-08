@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37b49422d7a36347af9b7bce10bcad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Step: 2
+  Step: 3
   Text: TimedPanel
   TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
     type: 3}
@@ -421,10 +421,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7628fe23a98f4d744a166480dcd4e94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Step: 1
+  Step: 2
   Text: Click the button
   TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
     type: 3}
+  DummyButton: 0
 --- !u!1 &198629081
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,10 +839,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7628fe23a98f4d744a166480dcd4e94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Step: 3
+  Step: 4
   Text: We need to clear the playersession info to restart the tutorial
   TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
     type: 3}
+  DummyButton: 0
 --- !u!1 &730550203
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +856,7 @@ GameObject:
   - component: {fileID: 730550207}
   - component: {fileID: 730550206}
   - component: {fileID: 730550205}
+  - component: {fileID: 730550208}
   m_Layer: 0
   m_Name: Less relevant Button
   m_TagString: Untagged
@@ -960,6 +963,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730550203}
   m_CullTransparentMesh: 0
+--- !u!114 &730550208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730550203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7628fe23a98f4d744a166480dcd4e94c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Step: 1
+  Text: This button is not important
+  TextPrefab: {fileID: 8977894513036782142, guid: 94262eeddba62e04082a4687559e787a,
+    type: 3}
+  DummyButton: 1
 --- !u!1 &932909983
 GameObject:
   m_ObjectHideFlags: 0
